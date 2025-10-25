@@ -51,6 +51,7 @@ pdf-chatbot/
 
 
 ## 🚀 How to Run (Step-by-Step)
+
  - 1️⃣ Clone the repository
     git clone https://github.com/your-username/pdf-chatbot.git
     cd pdf-chatbot
@@ -58,8 +59,14 @@ pdf-chatbot/
     docker compose build
 - 3️⃣ Run the chatbot
     docker compose up
-
+  
+## ⚙️ Configuration
+ - You can adjust default settings in the .env file:
+   
+               STREAMLIT_SERVER_PORT=8501
+   
 ## 🧩 How It Works
+
 - Upload a PDF or TXT file
    - The system extracts and splits text into manageable chunks.
    - Each chunk is embedded using a local transformer model.
