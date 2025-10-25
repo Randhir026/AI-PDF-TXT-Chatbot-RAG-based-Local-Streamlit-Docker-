@@ -16,21 +16,37 @@ This project is a Retrieval-Augmented Generation (RAG) based chatbot that lets y
 
 ## 📁 Folder Structure
 pdf-chatbot/
+
 │
+
 ├── app/
+
 │   ├── main.py                     ← Streamlit app (UI)
+
 │   └── src/
+
 │       ├── embedding_utils.py      ← Embeddings + FAISS
+
 │       ├── generator.py            ← Local generator (DistilGPT2)
+
 │       └── pdf_utils.py            ← PDF text chunking
+
 │
+
 ├── chunks/                         ← Stores document chunks
+
 ├── vectordb/                       ← Stores FAISS index
+
 │
+
 ├── requirements.txt                ← Python dependencies
+
 ├── Dockerfile                      ← Build environment
+
 ├── docker-compose.yml              ← Run services
+
 ├── .env                            ← Environment config (port)
+
 └── README.md
 
 
@@ -54,9 +70,12 @@ pdf-chatbot/
 
 ## 📜 License
    This project is released under the MIT License.
+   
    You are free to use, modify, and distribute it with attribution.
  
 ## 👨‍💻 Author
 Randhir Kumar
+
 📧randhirkumar015@gmail.com
+
 💼 AI/ML & Data Science Enthusiast
