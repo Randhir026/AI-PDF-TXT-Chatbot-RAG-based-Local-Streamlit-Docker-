@@ -36,3 +36,27 @@ pdf-chatbot/
 
 ## 🚀 How to Run (Step-by-Step)
  - 1️⃣ Clone the repository
+    git clone https://github.com/your-username/pdf-chatbot.git
+    cd pdf-chatbot
+- 2️⃣ Build the Docker image
+    docker compose build
+- 3️⃣ Run the chatbot
+    docker compose up
+
+## 🧩 How It Works
+- Upload a PDF or TXT file
+   - The system extracts and splits text into manageable chunks.
+   - Each chunk is embedded using a local transformer model.
+   - A FAISS index stores embeddings for efficient search.
+   - When you ask a question:
+        - Relevant chunks are retrieved.
+        - The local LLM model generates an answer from context.
+
+## 📜 License
+   This project is released under the MIT License.
+   You are free to use, modify, and distribute it with attribution.
+ 
+## 👨‍💻 Author
+Randhir Kumar
+📧randhirkumar015@gmail.com
+💼 AI/ML & Data Science Enthusiast
